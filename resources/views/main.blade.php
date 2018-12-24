@@ -3,6 +3,24 @@
 @section('content')
 <div class="container" >
     <h2 class="text-center">Weather Forecast on November, 2018</h2>
+    
+    <div class="card text-center pt-5 pb-5 mt-3 mb-3" >
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                Warm days 23,24 <br>
+                Falls 6,7,8,16,17,18,25,26 <br>
+                Old moon 23
+
+            </div>
+            <div class="col-md-6">
+                Cold days 9,10,11 <br>
+                Wind 11 <br>
+                New moon 7
+
+            </div>
+        </div>
+    </div>
+
     <div class="card text-center p-5" >
         <div class="row justify-content-center">
             <div class="col-md-3"></div>
@@ -18,14 +36,14 @@
 
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-5 pr-5">
             <div class="col-md-3 p-3">4,5</div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
             <div class="col-md-3 p-3">16,17,18</div>
 
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pl-5 pr-5">
             <div class="col-md-3 p-3">23,30</div>
             <div class="col-md-3"></div>
             <div class="col-md-3"></div>
@@ -49,18 +67,14 @@
 
     <div class="card text-center pt-5 pb-5 mt-3" >
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                Warm days 23,24 <br>
-                Falls 6,7,8,16,17,18,25,26 <br>
-                Old moon 23
+            <div class="col-md-12">
+                <h3>Notes</h3>
+                <p class="pl-5 pr-5 pt-2">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
 
             </div>
-            <div class="col-md-6">
-                Cold days 9,10,11 <br>
-                Wind 11 <br>
-                New moon 7
-
-            </div>
+            
         </div>
     </div>
 
