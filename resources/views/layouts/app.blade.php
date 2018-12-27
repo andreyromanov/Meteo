@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style type="text/css">
     .p-3{
-        border: 1px solid black;
+        border: 1px solid grey;
     }
 </style>
 </head>
@@ -80,10 +80,9 @@
         </div>
     </nav>
 
-    <main class="py-4" style="background-color: lightblue;">
+    <main class="py-4" style="background-color: lightblue;min-height: 450px;">
         @yield('content')
     </main>
-
 
     <!-- Footer -->
     <footer class="page-footer font-small teal pt-4 bg-success">
@@ -121,7 +120,7 @@
   <!-- Footer Text -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+  <div class="footer-copyright text-center py-3" style="border-top: 1px solid grey;">© 2018 Copyright:
    <b>DSP METEO UA</b>
 </div>
 <!-- Copyright -->
