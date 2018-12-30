@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
  Route::get('/main', 'MeteoController@index');
+
+ Route::post('/insert', 'MeteoController@select');

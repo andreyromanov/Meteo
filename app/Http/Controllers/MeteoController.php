@@ -13,4 +13,12 @@ class MeteoController extends Controller
 
 		return view('main', ['orders'=>$orders]);
 	}
+
+	public function select(Request $req)
+	{
+		$month = $req->get('month');
+		$orders = DB::table('forecast')->where('month', '=', $month)->get();
+
+		return view('main', ['orders'=>$orders]);
+	}
 }

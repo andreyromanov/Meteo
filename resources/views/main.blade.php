@@ -2,26 +2,45 @@
 
 @section('content')
 <div class="container" >
-  <h2 class="text-center">Weather Forecast on November, 2018</h2>
+  <h2 class="text-center">Weather Forecast on 
+
+    
+    @foreach ($orders as $order)
+    
+    @if ($order->month==1)
+    January, 2019
+    @break
+    
+    @elseif ($order->month==2)
+    February, 2019
+    @break
+
+    @elseif ($order->month==3)
+    March 
+    @break
+
+    @endif
+  @endforeach</h2>
 
   <div class="card text-center pt-5 pb-5 mt-3 mb-3" >
-    
-    <form>
+
+    <form role="form" action="/insert" method="post" enctype="multipart/form-data">
+      {{ csrf_field() }}
       <div class="row mb-4">
         <div class="col-md-6 text-right">
-          <select class="form-control" style="width: 200px;float: right;">
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>Aughust</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
+          <select name="month" class="form-control" style="width: 200px;float: right;">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">Aughust</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
           </select>
         </div>
         <div class="col-md-6 text-left">
