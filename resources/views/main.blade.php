@@ -19,6 +19,42 @@
     March 
     @break
 
+    @elseif ($order->month==4)
+    March 
+    @break
+
+    @elseif ($order->month==5)
+    March 
+    @break
+
+    @elseif ($order->month==6)
+    March 
+    @break
+
+    @elseif ($order->month==7)
+    March 
+    @break
+
+    @elseif ($order->month==8)
+    March 
+    @break
+
+    @elseif ($order->month==9)
+    March 
+    @break
+
+    @elseif ($order->month==10)
+    March 
+    @break
+
+    @elseif ($order->month==11)
+    March 
+    @break
+
+    @elseif ($order->month==12)
+    March 
+    @break
+
     @endif
   @endforeach</h2>
 
@@ -52,7 +88,15 @@
 
     <div class="row justify-content-center">
       <div class="col-md-6">
-        Warm days 23,24 <br>
+        Warm days @foreach ($orders as $order)
+        @if ($order->zodiak==2 or $order->zodiak==6 or $order->zodiak==10)
+
+        - {{$order->day}}&nbsp;
+
+        @else
+        @endif
+        @endforeach <br>
+
         Falls @foreach ($orders as $order)
         @if ($order->zodiak==4 or $order->zodiak==8 or $order->zodiak==12)
 
@@ -65,8 +109,23 @@
 
       </div>
       <div class="col-md-6">
-        Cold days 9,10,11 <br>
-        Wind 11 <br>
+        Cold days @foreach ($orders as $order)
+        @if ($order->zodiak==3 or $order->zodiak==7 or $order->zodiak==11)
+
+        - {{$order->day}}&nbsp;
+
+        @else
+        @endif
+        @endforeach <br>
+
+        Wind @foreach ($orders as $order)
+        @if ($order->zodiak==1 or $order->zodiak==5 or $order->zodiak==9)
+
+        - {{$order->day}}&nbsp;
+
+        @else
+        @endif
+        @endforeach<br>
         New moon 7
 
       </div>
