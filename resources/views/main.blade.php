@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container" >
-  <h2 class="text-center">Weather Forecast on 
+  <h2 class="text-center text-white h1">Weather Forecast on 
 
     
     @foreach ($orders as $order)
