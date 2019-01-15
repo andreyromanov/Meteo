@@ -39,65 +39,68 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end h5" id="navbarNav">
           <ul class="navbar-nav navbar-right h3">
-            <li class="nav-item mr-3">
-              <a class="nav-link text-white" href="#features">Можливості</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link text-white" href="#review">Відгуки</a>
-            </li>
 
-            <li class="nav-item mr-3">
-              <a class="nav-link text-white" href="/main">Прогноз</a>
-            </li>
-            @guest
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Вхід') }}</a>
-            </li>
-            @if (Route::has('register'))
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Реєстрація') }}</a>
-            </li>
-            @endif
-            @else
-            <li class="nav-item dropdown">
-              <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                {{ Auth::user()->name }} <span class="caret"></span>
-              </a>
-
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-              </a>
-
-              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-              </form>
-            </div>
+           <li class="nav-item mr-3">
+            <a class="nav-link text-white" href="/main#forc">Прогноз</a>
           </li>
-          @endguest
 
-        </ul>
-      </div>
-    </nav>
-    <div class="row m-0 pb-5" >
-      <div class="col-md-6 m-auto">
-        <label class="text-white mb-5 h1"><b>DSP METEO UA.</b> Головний місячний прогноз погоди.</label> <br>
-        <a href="#" class="gradient-button w-button mr-3 text-white mb-5">Download Now</a>
-        <a href="#" class="button w-button text-dark mb-5">Watch Video</a>
-      </div>
-      <div class="col-md-6 text-center m-auto pt-4">
-        <img class="w-75" src="img/moon.png">
-      </div>
+          <li class="nav-item mr-3">
+            <a class="nav-link text-white" href="#features">Можливості</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link text-white" href="#review">Відгуки</a>
+          </li>
+
+          <!--
+          @guest
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Вхід') }}</a>
+          </li>
+          @if (Route::has('register'))
+          <li class="nav-item">
+            <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Реєстрація') }}</a>
+          </li>
+          @endif
+          @else
+          <li class="nav-item dropdown">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+              {{ Auth::user()->name }} <span class="caret"></span>
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ route('logout') }}"
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">
+              {{ __('Logout') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </div>
+        </li>
+        @endguest
+-->
+      </ul>
+    </div>
+  </nav>
+  <div class="row m-0 pb-5" >
+    <div class="col-md-6 m-auto">
+      <label class="text-white mb-5 h1"><b>DSP METEO UA.</b> Головний місячний прогноз погоди.</label> <br>
+      <a href="#" class="gradient-button w-button mr-3 text-white mb-5">Download Now</a>
+      <a href="/main#forc" class="button w-button text-dark mb-5">Прогноз</a>
+    </div>
+    <div class="col-md-6 text-center m-auto pt-4">
+      <img class="w-75" src="img/moon.png">
     </div>
   </div>
+</div>
 
-  <main class="py-4" style="background-image:url('img/Background.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;min-height: 450px;">
-  @yield('content')
+<main class="py-4" style="background-image:url('img/Background.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;min-height: 450px;">
+@yield('content')
 </main>
 
 <footer class="page-footer pt-3 pb-3">
@@ -126,5 +129,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#forc').offset().top
+    }, 'slow');
+});
+
+</script>
 </body>
 </html>

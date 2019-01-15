@@ -7,20 +7,20 @@
     <h1>Можливості</h1>
     <div class="row m-0 pb-5 pt-5" >
      <div class="space"></div>
-     <div class="col-md-3 text-center m-4 pt-5 div-box">
-      <img src="img/icons/Reload Icon1.png"> <br>
-      <label class="pt-3"><b>Sync</b> across all devices</label> 
-      <label class="pt-2">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</label>
+     <div class="col-md-3 text-center m-4 pt-3 div-box">
+      <img src="img/icons/Notifications Icon.png"> <br>
+      <label class="pt-3"><b>Точний</b> прогноз погоди</label> 
+      <label class="pt-2">Завдяки перевіреному алгоритму розрахунку прогнозу погоди, Ви отримуєте прогноз на кожен день.</label>
     </div>
-    <div class="col-md-3 text-center m-4 pt-5 div-box">
+    <div class="col-md-3 text-center m-4 pt-3 div-box">
      <img src="img/icons/Inbox Icon1.png"> <br>
-     <label class="pt-3"><b>All emails</b> in one place</label>
-     <label class="pt-2">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</label>
+     <label class="pt-3"><b>Зручний</b> інтерфейс</label>
+     <label class="pt-2">Сучасний інтерфейс дозволяє зручно користуватися прогнозом погоди.</label>
    </div>
-   <div class="col-md-3 text-center m-4 pt-5 div-box">
-     <img src="img/icons/Notifications Icon.png"> <br>
-     <label class="pt-3"><b>Notifications</b> about sales</label>
-     <label class="pt-2">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</label>
+   <div class="col-md-3 text-center m-4 pt-3 div-box">
+     <img src="img/icons/Reload Icon1.png"> <br>
+     <label class="pt-3"><b>Зворотній</b> зв'язок</label>
+     <label class="pt-2">Надсилайте свої відкуки про сайт DSP METEO UA - завдяки Вашим відгукам, ми покращуємо цей продукт.</label>
    </div>
  </div>
 </div>
@@ -28,12 +28,12 @@
 <div class="content bg">
   <div class="row m-0 pt-3">
     <div class="col-md-7 text-white m-auto">
-      <h3><b>Download</b> to get started</h3>
+      <h3><b>Дізнайтесь</b> точний прогноз</h3>
       This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.  
     </div>
-    <div class="col-md-5 pt-5 text-center">
-      <a href="#" class="gradient-button w-button mr-3 text-white mb-5">Buy for $24</a>
-      <a href="#" class="button w-button text-dark mb-5">Try It Free</a>
+    <div class="col-md-5 pt-5 text-center m-auto">
+      <a href="/main#forc" class="gradient-button w-button mr-3 text-white mb-5">Прогноз</a>
+      
     </div>
   </div>
 </div>
