@@ -1,40 +1,41 @@
 
-  @extends('layouts.app')
+@extends('layouts.app')
 
-  @section('content')
+@section('content')
 
-  <div id="features" class="content text-center sect-2 bg-grey">
-    <h1>Можливості</h1>
-    <div class="row m-0 pb-5 pt-5" >
-     <div class="space"></div>
-     <div class="col-md-3 text-center m-4 pt-3 div-box">
-      <img src="img/icons/Notifications Icon.png"> <br>
-      <label class="pt-3"><b>Точний</b> прогноз погоди</label> 
-      <label class="pt-2">Завдяки перевіреному алгоритму розрахунку прогнозу погоди, Ви отримуєте прогноз на кожен день.</label>
-    </div>
-    <div class="col-md-3 text-center m-4 pt-3 div-box">
-     <img src="img/icons/Inbox Icon1.png"> <br>
-     <label class="pt-3"><b>Зручний</b> інтерфейс</label>
-     <label class="pt-2">Сучасний інтерфейс дозволяє зручно користуватися прогнозом погоди.</label>
-   </div>
+<div id="features" class="content text-center sect-2 bg-grey">
+  <h1>Можливості</h1>
+  <div class="row m-0 pb-5 pt-5" >
+   <div class="space"></div>
    <div class="col-md-3 text-center m-4 pt-3 div-box">
-     <img src="img/icons/Reload Icon1.png"> <br>
-     <label class="pt-3"><b>Зворотній</b> зв'язок</label>
-     <label class="pt-2">Надсилайте свої відкуки про сайт DSP METEO UA - завдяки Вашим відгукам, ми покращуємо цей продукт.</label>
-   </div>
+    <img src="img/icons/Notifications Icon.png"> <br>
+    <label class="pt-3 h4"><b>Точний</b> прогноз погоди</label> 
+    <label class="pt-2">Завдяки перевіреному алгоритму розрахунку прогнозу погоди, Ви отримуєте прогноз на кожен день.</label>
+  </div>
+  <div class="col-md-3 text-center m-4 pt-3 div-box">
+   <img src="img/icons/Inbox Icon1.png"> <br>
+   <label class="pt-3 h4"><b>Зручний</b> інтерфейс</label>
+   <label class="pt-2">Сучасний інтерфейс дозволяє зручно користуватися прогнозом погоди з телефонів, комп'ютерів та планшетів.</label>
  </div>
+ <div class="col-md-3 text-center m-4 pt-3 div-box">
+   <img src="img/icons/Reload Icon1.png"> <br>
+   <label class="pt-3 h4"><b>Зворотній</b> зв'язок</label>
+   <label class="pt-2">Надсилайте свої відкуки про сайт DSP METEO UA - завдяки Вашим відгукам, ми покращуємо цей продукт.</label>
+ </div>
+</div>
 </div>
 
 <div class="content bg">
   <div class="row m-0 pt-3">
-    <div class="col-md-7 text-white m-auto">
-      <h3><b>Дізнайтесь</b> точний прогноз</h3>
-      This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.  
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-white m-auto text-center">
+      <h4><b>Дізнайтесь</b> точний прогноз</h4>
     </div>
-    <div class="col-md-5 pt-5 text-center m-auto">
+    <div class="col-md-3 pt-5 text-center m-auto">
       <a href="/main#forc" class="gradient-button w-button mr-3 text-white mb-5">Прогноз</a>
       
     </div>
+    <div class="col-md-3"></div>
   </div>
 </div>
 
@@ -75,7 +76,7 @@
   <div class="row m-0">
     <div class="col-md-8 text-white text-center mb-5 m-auto">
       <h2 class="mt-5"><b>Напишіть</b> нам</h2>
-      <label class="ml-md-5 mr-md-5 pl-md-5 pr-md-5 mb-5">This sounded nonsense to Alice, so she said nothing, but set off at once toward the Red Queen. To her surprise.</label>
+      <label class="ml-md-5 mr-md-5 pl-md-5 pr-md-5 mb-5 h5">Якщо у Вас виникли запитання або Ви маєте побажання, щодо роботи сайту - пишіть нам повідомлення і ми обов'язково відповімо.</label>
 
       <form class="bg-white m-auto rounded" role="form" >
         <div class="row pl-5 pr-5 pt-5" >

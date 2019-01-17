@@ -62,7 +62,7 @@
 
     <form role="form" action="/insert" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
-      <div class="row mb-3">
+      <div class="row mb-3 ">
        <div class="col-md-4"></div>
        <div class="col-md-2 mb-2 text-center">
         <select name="month" class="form-control text-center m-auto" style="width: 155px;">
@@ -81,16 +81,16 @@
         </select>
       </div>
       <div class="col-md-2 mb-2 text-center">
-        <button type="submit" class="btn btn-primary mb-2 pl-5 pr-5 m-auto">Показати</button>
+        <button type="submit" class="btn btn-primary mb-2 pl-5 pr-5 m-auto h5">Показати</button>
       </div>
       <div class="col-md-4"></div>
     </div>
   </form>
 
 
-  <div class="row justify-content-center">
+  <div class="row justify-content-center h5" style="line-height: 2">
     <div class="col-md-6">
-      Warm days @foreach ($orders as $order)
+      Теплі дні @foreach ($orders as $order)
       @if ($order->zodiak==2 or $order->zodiak==6 or $order->zodiak==10)
 
       - {{$order->day}}&nbsp;
@@ -99,7 +99,7 @@
       @endif
       @endforeach <br>
 
-      Falls @foreach ($orders as $order)
+      Опади @foreach ($orders as $order)
       @if ($order->zodiak==4 or $order->zodiak==8 or $order->zodiak==12)
 
       - {{$order->day}}&nbsp;
@@ -107,11 +107,11 @@
       @else
       @endif
       @endforeach <br>
-      Old moon 23
+      Старий місяць - 23
 
     </div>
     <div class="col-md-6">
-      Cold days @foreach ($orders as $order)
+      Холодні дні @foreach ($orders as $order)
       @if ($order->zodiak==3 or $order->zodiak==7 or $order->zodiak==11)
 
       - {{$order->day}}&nbsp;
@@ -120,7 +120,7 @@
       @endif
       @endforeach <br>
 
-      Wind @foreach ($orders as $order)
+      Вітер @foreach ($orders as $order)
       @if ($order->zodiak==1 or $order->zodiak==5 or $order->zodiak==9)
 
       - {{$order->day}}&nbsp;
@@ -128,7 +128,7 @@
       @else
       @endif
       @endforeach<br>
-      New moon 7
+      Новий місяць - 7
 
     </div>
   </div>
@@ -138,167 +138,192 @@
   <div class="row justify-content-center">
     <div class="col-md-3"></div>
     <div class="col-md-3 p-3">
-      @foreach ($orders as $order)
-      @if ($order->zodiak==12)
-
-      - {{$order->day}}&nbsp;
-
-      @else
-      @endif
-      @endforeach
-      <label style="float: left;">12</label></div>
-
-      <div class="col-md-3 p-3">
+      <label class="pt-3">
         @foreach ($orders as $order)
-        @if ($order->zodiak==1)
+        @if ($order->zodiak==12)
 
         - {{$order->day}}&nbsp;
 
         @else
         @endif
         @endforeach
-        <label style="float: right;">1</label></div>
-        <div class="col-md-3"></div>
+      </label>
+      <label style="float: left;"><img src="img/signs/fish.png" style="width: 50px"></label></div>
 
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-3 p-3 mr-5">
+      <div class="col-md-3 p-3">
+        <label class="pt-3">
           @foreach ($orders as $order)
-          @if ($order->zodiak==11)
+          @if ($order->zodiak==1)
 
           - {{$order->day}}&nbsp;
 
           @else
           @endif
           @endforeach
-          <label style="float: left;">11</label></div>
-          <div class="col-md-3 p-3 ml-5">
+        </label>
+        <label style="float: right;"><img src="img/signs/oven.png" style="width: 50px"></label></div>
+        <div class="col-md-3"></div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-3 p-3 mr-5">
+          <label class="pt-3">
             @foreach ($orders as $order)
-            @if ($order->zodiak==2)
+            @if ($order->zodiak==11)
 
             - {{$order->day}}&nbsp;
 
             @else
             @endif
             @endforeach
-            <label style="float: right;">2</label></div>
+          </label>
+          <label style="float: left;"><img src="img/signs/vodoley.png" style="width: 50px"></label>
+        </div>
+        <div class="col-md-3 p-3 ml-5">
+         <label class="pt-3">
+          @foreach ($orders as $order)
+          @if ($order->zodiak==2)
 
-          </div>
+          - {{$order->day}}&nbsp;
 
-          <div class="row justify-content-center pl-5 pr-5">
-            <div class="col-md-3 p-3">
+          @else
+          @endif
+          @endforeach
+        </label>
+        <label style="float: right;"><img src="img/signs/bull.png" style="width: 50px"></label></div>
+
+      </div>
+
+      <div class="row justify-content-center pl-5 pr-5">
+        <div class="col-md-3 p-3">
+          <label class="pt-3">
+            @foreach ($orders as $order)
+            @if ($order->zodiak==10)
+
+            - {{$order->day}}&nbsp;
+
+            @else
+            @endif
+            @endforeach
+          </label>
+          <label style="float: left;"><img src="img/signs/goat.png" style="width: 50px"></label></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3 p-3">
+            <label class="pt-3">
               @foreach ($orders as $order)
-              @if ($order->zodiak==10)
+              @if ($order->zodiak==3)
 
               - {{$order->day}}&nbsp;
 
               @else
               @endif
               @endforeach
-              <label style="float: left;">10</label></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3"></div>
-              <div class="col-md-3 p-3">
+            </label>
+            <label style="float: right;"><img src="img/signs/twins.png" style="width: 50px"></label></div>
+
+          </div>
+          <div class="row justify-content-center pl-5 pr-5">
+            <div class="col-md-3 p-3">
+              <label class="pt-3">
                 @foreach ($orders as $order)
-                @if ($order->zodiak==3)
+                @if ($order->zodiak==9)
 
                 - {{$order->day}}&nbsp;
 
                 @else
                 @endif
                 @endforeach
-                <label style="float: right;">3</label></div>
-
-              </div>
-              <div class="row justify-content-center pl-5 pr-5">
-                <div class="col-md-3 p-3">
+              </label>
+              <label style="float: left;"><img src="img/signs/sniper.png" style="width: 50px"></label></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3"></div>
+              <div class="col-md-3 p-3">
+                <label class="pt-3">
                   @foreach ($orders as $order)
-                  @if ($order->zodiak==9)
+                  @if ($order->zodiak==4)
 
                   - {{$order->day}}&nbsp;
 
                   @else
                   @endif
                   @endforeach
-                  <label style="float: left;">9</label></div>
-                  <div class="col-md-3"></div>
-                  <div class="col-md-3"></div>
-                  <div class="col-md-3 p-3">
+                </label>
+                <label style="float: right;"><img src="img/signs/crab.png" style="width: 50px"></label></div>
+
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-3 p-3 mr-5">
+                  <label class="pt-3">
                     @foreach ($orders as $order)
-                    @if ($order->zodiak==4)
+                    @if ($order->zodiak==8)
 
                     - {{$order->day}}&nbsp;
 
                     @else
                     @endif
                     @endforeach
-                    <label style="float: right;">4</label></div>
-
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-md-3 p-3 mr-5">
+                  </label>
+                  <label style="float: left;"><img src="img/signs/scorpion.png" style="width: 50px"></label></div>
+                  <div class="col-md-3 p-3 ml-5">
+                    <label class="pt-3">
                       @foreach ($orders as $order)
-                      @if ($order->zodiak==8)
+                      @if ($order->zodiak==5)
 
                       - {{$order->day}}&nbsp;
 
                       @else
                       @endif
                       @endforeach
-                      <label style="float: left;">8</label></div>
-                      <div class="col-md-3 p-3 ml-5">
+                    </label>
+                    <label style="float: right;"><img src="img/signs/lion.png" style="width: 50px"></label></div>
+
+
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3 p-3">
+                      <label class="pt-3">
                         @foreach ($orders as $order)
-                        @if ($order->zodiak==5)
+                        @if ($order->zodiak==7)
 
                         - {{$order->day}}&nbsp;
 
                         @else
                         @endif
                         @endforeach
-                        <label style="float: right;">5</label></div>
-
-
-                      </div>
-                      <div class="row justify-content-center">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3 p-3">
+                      </label>
+                      <label style="float: left;"><img src="img/signs/terezi.png" style="width: 50px"></label></div>
+                      <div class="col-md-3 p-3">
+                        <label class="pt-3">
                           @foreach ($orders as $order)
-                          @if ($order->zodiak==7)
+                          @if ($order->zodiak==6)
 
                           - {{$order->day}}&nbsp;
 
                           @else
                           @endif
                           @endforeach
-                          <label style="float: left;">7</label></div>
-                          <div class="col-md-3 p-3">
-                            @foreach ($orders as $order)
-                            @if ($order->zodiak==6)
+                        </label>
+                        <label style="float: right;"><img src="img/signs/deva.png" style="width: 50px"></label></div>
+                        <div class="col-md-3"></div>
 
-                            - {{$order->day}}&nbsp;
+                      </div>
+                    </div>
 
-                            @else
-                            @endif
-                            @endforeach
-                            <label style="float: right;">6</label></div>
-                            <div class="col-md-3"></div>
+                    <div class="card text-center pt-5 pb-5 mt-3" >
+                      <div class="row justify-content-center">
+                        <div class="col-md-12">
+                          <h3>Додаткова інформація</h3>
+                          <p class="pl-5 pr-5 pt-2">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                          </p>
 
-                          </div>
-                        </div>
-
-                        <div class="card text-center pt-5 pb-5 mt-3" >
-                          <div class="row justify-content-center">
-                            <div class="col-md-12">
-                              <h3>Notes</h3>
-                              <p class="pl-5 pr-5 pt-2">
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                              </p>
-
-                            </div>
-
-                          </div>
                         </div>
 
                       </div>
-                      @endsection
+                    </div>
+
+                  </div>
+                  @endsection

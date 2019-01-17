@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nunito-sans" type="text/css"/>
+  <link rel="icon" href="img/zodlogo.png">
   <style type="text/css">body{font-family: 'NunitoSansRegular'!important;}</style>
   <style type="text/css">
   .p-3{
@@ -45,10 +46,10 @@
           </li>
 
           <li class="nav-item mr-3">
-            <a class="nav-link text-white" href="#features">Можливості</a>
+            <a class="nav-link text-white" href="/#features">Можливості</a>
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link text-white" href="#review">Відгуки</a>
+            <a class="nav-link text-white" href="/#review">Відгуки</a>
           </li>
 
           <!--
@@ -80,20 +81,20 @@
           </div>
         </li>
         @endguest
--->
-      </ul>
-    </div>
-  </nav>
-  <div class="row m-0 pb-5" >
-    <div class="col-md-6 m-auto">
-      <label class="text-white mb-5 h1"><b>DSP METEO UA.</b> Головний місячний прогноз погоди.</label> <br>
-      <a href="#" class="gradient-button w-button mr-3 text-white mb-5">Download Now</a>
-      <a href="/main#forc" class="button w-button text-dark mb-5">Прогноз</a>
-    </div>
-    <div class="col-md-6 text-center m-auto pt-4">
-      <img class="w-75" src="img/moon.png">
-    </div>
+      -->
+    </ul>
   </div>
+</nav>
+<div class="row m-0 pb-5" >
+  <div class="col-md-6 m-auto">
+    <label class="text-white mb-5 h1"><b>DSP METEO UA.</b> Головний місячний прогноз погоди.</label> <br>
+    <a href="/main#forc" class="gradient-button w-button mr-3 text-white mb-5">Прогноз</a>
+    <!--<a href="/main#forc" class="button w-button text-dark mb-5">Прогноз</a>-->
+  </div>
+  <div class="col-md-6 text-center m-auto pt-4">
+    <img class="w-75" src="img/moon.png">
+  </div>
+</div>
 </div>
 
 <main class="py-4" style="background-image:url('img/Background.png');
@@ -131,12 +132,11 @@ background-attachment: fixed;min-height: 450px;">
 
 <script type="text/javascript">
 
-$(document).ready(function () {
-    // Handler for .ready() called.
+  $(document).ready(function () {
     $('html, body').animate({
-        scrollTop: $('#forc').offset().top
+      scrollTop: $('#forc').offset().top
     }, 'slow');
-});
+  });
 
 </script>
 </body>
