@@ -81,7 +81,7 @@
         </select>
       </div>
       <div class="col-md-2 mb-2 text-center">
-        <button type="submit" class="btn btn-primary mb-2 pl-5 pr-5 m-auto h5">Показати</button>
+        <button type="submit" class="btn btn-primary mb-2 pl-5 pr-5 m-auto">Показати</button>
       </div>
       <div class="col-md-4"></div>
     </div>
@@ -317,7 +317,7 @@
                         <div class="col-md-12">
                           <h3>Додаткова інформація</h3>
                           <p class="pl-5 pr-5 pt-2">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            Це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
                           </p>
 
                         </div>
