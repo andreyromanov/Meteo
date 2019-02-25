@@ -107,8 +107,14 @@
       @else
       @endif
       @endforeach <br>
-      Старий місяць - 23
+      Повний місяць @foreach ($orders as $order)
+      @if ($order->moon==2)
 
+      - {{$order->day}}&nbsp;
+
+      @else
+      @endif
+      @endforeach
     </div>
     <div class="col-md-6">
       Холодні дні @foreach ($orders as $order)
@@ -128,8 +134,14 @@
       @else
       @endif
       @endforeach<br>
-      Новий місяць - 7
+      Новий місяць @foreach ($orders as $order)
+      @if ($order->moon==1)
 
+      - {{$order->day}}&nbsp;
+
+      @else
+      @endif
+      @endforeach
     </div>
   </div>
 </div>
@@ -316,8 +328,10 @@
                       <div class="row justify-content-center">
                         <div class="col-md-12">
                           <h3>Додаткова інформація</h3>
-                          <p class="pl-5 pr-5 pt-2">
-                            Це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+                          <p class="pl-5 pr-5 pt-2" style="font-size: 16px;">
+                            Гарне самопочуття будя супроводжувати протягом <b>перших</b> двох тижнів тих, хто народився під тим знаком зодіака який йому належить.
+                            <br>
+                            Протягом <b>других</b> двох тижнів до вказаного знака слід остерігатися від перегрузок, недисипань та стресів. 
                           </p>
 
                         </div>
