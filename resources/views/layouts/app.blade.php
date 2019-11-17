@@ -114,7 +114,7 @@ background-attachment: fixed;min-height: 450px;">
           <h3>DSP METEO UA</h3>   
         </div>
         <div class="col-sm-4 col-md-4 mb-md-0 mb-3 text-center">
-          <label>Розробка - <b>Andrii Romanov</b></label> <br>
+          <!--label>Розробка - <b>Andrii Romanov</b></label> <br-->
           <label>DSP METEO UA</label>
         </div>
         <div class="col-sm-4 col-md-4 mb-md-0 mb-3 text-md-right text-sm-center">

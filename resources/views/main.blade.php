@@ -8,7 +8,7 @@
     @foreach ($orders as $order)
     
     @if ($order->month==1)
-    Січень, 2019
+    Січень, 2020
     @break
     
     @elseif ($order->month==2)
@@ -16,7 +16,7 @@
     @break
 
     @elseif ($order->month==3)
-    Березень 
+    Березень,2019 
     @break
 
     @elseif ($order->month==4)
@@ -52,7 +52,7 @@
     @break
 
     @elseif ($order->month==12)
-    Грудень 
+    Грудень, 2019 
     @break
 
     @endif
@@ -63,9 +63,10 @@
     <form role="form" action="/insert" method="post" enctype="multipart/form-data">
       {{ csrf_field() }}
       <div class="row mb-3 ">
-       <div class="col-md-4"></div>
+       <div class="col-md-2"></div>
        <div class="col-md-2 mb-2 text-center">
         <select name="month" class="form-control text-center m-auto" style="width: 155px;">
+          <option value=""> --- </option>
           <option value="1">Січень</option>
           <option value="2">Лютий</option>
           <option value="3">Березень</option>
@@ -78,6 +79,13 @@
           <option value="10">Жовтень</option>
           <option value="11">Листопад</option>
           <option value="12">Грудень</option>
+        </select>
+      </div>
+      <div class="col-md-2 mb-2 text-center">
+        <select name="year" class="form-control text-center m-auto" style="width: 155px;">
+          <option value=""> --- </option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
         </select>
       </div>
       <div class="col-md-2 mb-2 text-center">
@@ -331,7 +339,7 @@
                           <p class="pl-5 pr-5 pt-2" style="font-size: 16px;">
                             Гарне самопочуття будя супроводжувати протягом <b>перших</b> двох тижнів тих, хто народився під тим знаком зодіака який йому належить.
                             <br>
-                            Протягом <b>других</b> двох тижнів до вказаного знака слід остерігатися від перегрузок, недисипань та стресів. 
+                            Протягом <b>других</b> двох тижнів до вказаного знака слід остерігатися від перевантажень, недисипань та стресів. 
                           </p>
 
                         </div>
